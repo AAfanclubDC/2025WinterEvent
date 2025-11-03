@@ -1,5 +1,11 @@
 {
   "eventName": "2025WinterEvent",
-  "participants": [],
+  "participants": [
+    {
+      "uid": 1,
+      "id": "534243081135063041",
+      "name": "roleecorn"
+    }
+  ],
   "Registration": "1434822480354218045"
 }
