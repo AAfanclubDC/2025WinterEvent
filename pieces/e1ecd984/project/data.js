@@ -642,14 +642,14 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 		"shops": [
 			{
 				"id": "shop1",
-				"text": "\t[店長,triangle]均一價${Math.min(20+3*flag:shop1,100)}金幣",
+				"text": "\t[店長,triangle]均一價${Math.min(20+3*flag:shop1,80)}金幣",
 				"textInList": "炭烤蜜瓜兔子",
 				"mustEnable": false,
 				"disablePreview": false,
 				"choices": [
 					{
 						"text": "生命+800",
-						"need": "status:money>=20+3*flag:shop1 || status:money>=100",
+						"need": "status:money>=20+3*flag:shop1 || status:money>=80",
 						"action": [
 							{
 								"type": "comment",
@@ -657,13 +657,13 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 							},
 							{
 								"type": "if",
-								"condition": "(20+3*flag:shop1>100)",
+								"condition": "(20+3*flag:shop1>80)",
 								"true": [
 									{
 										"type": "setValue",
 										"name": "status:money",
 										"operator": "-=",
-										"value": "100"
+										"value": "80"
 									}
 								],
 								"false": [
@@ -691,7 +691,7 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 					},
 					{
 						"text": "攻擊+4",
-						"need": "status:money>=20+3*flag:shop1 || status:money>=100",
+						"need": "status:money>=20+3*flag:shop1 || status:money>=80",
 						"action": [
 							{
 								"type": "comment",
@@ -699,7 +699,7 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 							},
 							{
 								"type": "if",
-								"condition": "(20+3*flag:shop1>100)",
+								"condition": "(20+3*flag:shop1>80)",
 								"true": [
 									{
 										"type": "setValue",
@@ -733,7 +733,7 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 					},
 					{
 						"text": "防禦+4",
-						"need": "status:money>=20+3*flag:shop1 || status:money>=100",
+						"need": "status:money>=20+3*flag:shop1 || status:money>=80",
 						"action": [
 							{
 								"type": "comment",
@@ -741,13 +741,13 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 							},
 							{
 								"type": "if",
-								"condition": "(20+3*flag:shop1>100)",
+								"condition": "(20+3*flag:shop1>80)",
 								"true": [
 									{
 										"type": "setValue",
 										"name": "status:money",
 										"operator": "-=",
-										"value": "100"
+										"value": "80"
 									}
 								],
 								"false": [
