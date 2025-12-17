@@ -116,8 +116,7 @@ fetch('./data/res_sorted.json')
         // data: [[index, uid, htmlName?], ...]
         // 依「出現順序」給 A組、B組、C組...
         const info = data.map(([index, uid, htmlName], i) => {
-            const groupLetter = String.fromCharCode(65 + i); // 0=>A,1=>B,2=>C...
-            const title = groupLetter + "組";
+            const title = htmlName ? htmlName.replace(/\.html$/i, "") : null;
             const url = htmlName ? htmlName : `404.html`;
 
             return {
@@ -142,6 +141,7 @@ fetch('./data/res_sorted.json')
 
                 // 依照 info 產生全部按鈕
                 info.forEach(player => {
+                    if (player.url === "404.html") return;
                     const button = generateButton(player.src, player.title, player.url);
                     article.appendChild(button);
                 });
