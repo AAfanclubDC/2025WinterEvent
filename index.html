@@ -119,10 +119,9 @@ fetch('./data/res_sorted.json')
             const groupLetter = String.fromCharCode(65 + i); // 0=>A,1=>B,2=>C...
             const title = groupLetter + "組";
             const url = htmlName ? htmlName : `Group${groupLetter}.html`;
-            const imgNumber = String(index).padStart(2, '0'); // 1 -> "01"
 
             return {
-                src: `images/players/${imgNumber}.png`,
+                src: `images/players/${index}.png`,
                 title: title,
                 url: url
             };
