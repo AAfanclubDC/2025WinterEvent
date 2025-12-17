@@ -48,7 +48,7 @@ var enemys_fcae963b_31c9_42b4_b48c_bb48d09f3f80 =
 	"slimeman": {"name":"影子战士","hp":100,"atk":60,"def":40,"money":11,"exp":0,"point":0,"special":[9],"atkValue":2,"defValue":3},
 	"yellowGateKeeper": {"name":"初级卫兵","hp":100,"atk":10,"def":80,"money":10,"exp":0,"point":0,"special":0},
 	"blueGateKeeper": {"name":"中级卫兵","hp":1400,"atk":150,"def":200,"money":80,"exp":10,"point":0,"special":0},
-	"redGateKeeper": {"name":"高级卫兵","hp":2000,"atk":500,"def":800,"money":200,"exp":50,"point":0,"special":0},
+	"redGateKeeper": {"name":"高级卫兵","hp":8000,"atk":350,"def":400,"money":200,"exp":50,"point":0,"special":0},
 	"magicMaster": {"name":"黑暗大法师","hp":100,"atk":120,"def":0,"money":12,"exp":0,"point":0,"special":11,"value":0.3333333333333333,"add":true,"notBomb":true},
 	"devilWarrior": {"name":"魔神武士","hp":350,"atk":220,"def":120,"money":24,"exp":6,"point":0,"special":0},
 	"fairyEnemy": {"name":"仙子","hp":80,"atk":50,"def":30,"money":4,"exp":1,"point":0,"special":0},
