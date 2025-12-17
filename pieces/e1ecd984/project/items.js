@@ -322,7 +322,7 @@ var items_296f5d02_12fd_4166_a7c1_b5e830c9ee3a =
 		"itemEffectTip": "，生命值翻倍",
 		"useItemEffect": null,
 		"canUseItemEffect": "true",
-		"text": "生命值翻倍",
+		"text": "全屬性翻倍",
 		"useItemEvent": [
 			"\t[弱智,default]嗯...這個應該是很重要的東西，要現在使用嗎?",
 			{
