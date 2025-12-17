@@ -20,7 +20,7 @@ var enemys_fcae963b_31c9_42b4_b48c_bb48d09f3f80 =
 	"swordsman": {"name":"双手剑士","hp":180,"atk":123,"def":81,"money":20,"exp":3,"point":0,"special":[4],"value":42},
 	"soldier": {"name":"不死战士","hp":1100,"atk":1240,"def":800,"money":22,"exp":3,"point":0,"special":[],"reid":212,"value":100,"damage":9,"defValue":20},
 	"yellowKnight": {"name":"骑士","hp":210,"atk":91,"def":47,"money":15,"exp":3,"point":0,"special":null,"value":null},
-	"redKnight": {"name":"近卫骑士","hp":1002,"atk":777,"def":450,"money":100,"exp":20,"point":0,"special":[],"value":null},
+	"redKnight": {"name":"近卫骑士","hp":1500,"atk":555,"def":333,"money":100,"exp":20,"point":0,"special":[],"value":null},
 	"darkKnight": {"name":"死灵战士","hp":1300,"atk":112,"def":89,"money":40,"exp":3,"point":0,"special":[23],"reid":225,"value":140},
 	"blueKnight": {"name":"铁骑士","hp":370,"atk":213,"def":130,"money":27,"exp":3,"point":0,"special":[],"value":27},
 	"goldSlime": {"name":"黄头怪","hp":80,"atk":10,"def":5,"money":4,"exp":1,"point":0,"special":0},
