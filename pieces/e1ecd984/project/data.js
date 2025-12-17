@@ -250,8 +250,8 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 	"firstData": {
 		"title": "最後的勇者之塔",
 		"name": "idiot",
-		"version": "Ver 1.0.0",
-		"floorId": "story_1",
+		"version": "Ver 1.0.1",
+		"floorId": "Shop",
 		"hero": {
 			"image": "hero.png",
 			"animate": false,
@@ -264,7 +264,7 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 			"atk": 10,
 			"def": 0,
 			"mdef": 0,
-			"money": 0,
+			"money": 1000,
 			"exp": 0,
 			"equipment": [],
 			"items": {
@@ -275,7 +275,7 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 			"loc": {
 				"direction": "up",
 				"x": 6,
-				"y": 9
+				"y": 8
 			},
 			"flags": {},
 			"followers": [],
