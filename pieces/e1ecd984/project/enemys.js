@@ -52,7 +52,7 @@ var enemys_fcae963b_31c9_42b4_b48c_bb48d09f3f80 =
 	"magicMaster": {"name":"黑暗大法师","hp":100,"atk":120,"def":0,"money":12,"exp":0,"point":0,"special":11,"value":0.3333333333333333,"add":true,"notBomb":true},
 	"devilWarrior": {"name":"魔神武士","hp":350,"atk":220,"def":120,"money":24,"exp":6,"point":0,"special":0},
 	"fairyEnemy": {"name":"仙子","hp":80,"atk":50,"def":30,"money":4,"exp":1,"point":0,"special":0},
-	"dragon": {"name":"琪多卡洛斯","hp":2000,"atk":300,"def":150,"money":72,"exp":18,"point":0,"special":0,"bigImage":"dragon_0.png"},
+	"dragon": {"name":"琪多卡洛斯","hp":2000,"atk":300,"def":150,"money":72,"exp":18,"point":0,"special":0,"bigImage":"Mermaid.png"},
 	"skeletonKnight": {"name":"骷髅武士","hp":180,"atk":150,"def":60,"money":16,"exp":4,"point":0,"special":0},
 	"skeletonPresbyter": {"name":"骷髅巫师","hp":200,"atk":160,"def":40,"money":16,"exp":4,"point":0,"special":0},
 	"ironRock": {"name":"铁面人","hp":45,"atk":400,"def":200,"money":50,"exp":5,"point":0,"special":[3]},
