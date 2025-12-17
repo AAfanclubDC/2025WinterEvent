@@ -34,7 +34,7 @@ var enemys_fcae963b_31c9_42b4_b48c_bb48d09f3f80 =
 	"silverSlime": {"name":"银头怪","hp":100,"atk":120,"def":0,"money":15,"exp":0,"point":0,"special":14},
 	"whiteHornSlime": {"name":"尖角怪","hp":150,"atk":130,"def":40,"money":12,"exp":3,"point":0,"special":0},
 	"redSwordsman": {"name":"剑王","hp":920,"atk":1020,"def":620,"money":73,"exp":8,"point":0,"special":[6],"n":4,"value":80},
-	"poisonZombie": {"name":"毒丧尸","hp":66,"atk":50,"def":38,"money":48,"exp":5,"point":0,"special":[12],"value":70,"atkValue":12},
+	"poisonZombie": {"name":"毒丧尸","hp":66,"atk":50,"def":38,"money":48,"exp":5,"point":0,"special":[],"value":70,"atkValue":12},
 	"octopus": {"name":"血影","hp":500,"atk":220,"def":100,"money":28,"exp":7,"point":0,"special":0,"bigImage":"dragon_1.png"},
 	"princessEnemy": {"name":"假公主","hp":150,"atk":80,"def":40,"money":8,"exp":2,"point":0,"special":0},
 	"angel": {"name":"天使","hp":200,"atk":120,"def":60,"money":12,"exp":3,"point":0,"special":0},
