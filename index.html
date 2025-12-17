@@ -114,7 +114,6 @@ fetch('./data/res_sorted.json')
     .then(response => response.json())
     .then(data => {
         // data: [[index, uid, htmlName?], ...]
-        // 依「出現順序」給 A組、B組、C組...
         const info = data.map(([index, uid, htmlName], i) => {
             const title = htmlName ? htmlName.replace(/\.html$/i, "") : null;
             const url = htmlName ? htmlName : `404.html`;
