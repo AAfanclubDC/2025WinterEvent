@@ -25,7 +25,7 @@ var enemys_fcae963b_31c9_42b4_b48c_bb48d09f3f80 =
 	"blueKnight": {"name":"铁骑士","hp":370,"atk":213,"def":130,"money":27,"exp":3,"point":0,"special":[],"value":27},
 	"goldSlime": {"name":"黄头怪","hp":80,"atk":10,"def":5,"money":4,"exp":1,"point":0,"special":0},
 	"poisonSkeleton": {"name":"骷髅头目","hp":999,"atk":692,"def":90,"money":50,"exp":6,"point":0,"special":[13],"value":93,"damage":5,"defValue":10},
-	"poisonBat": {"name":"毒蝙蝠","hp":700,"atk":280,"def":160,"money":40,"exp":6,"point":0,"special":[1,5],"value":80,"atkValue":5},
+	"poisonBat": {"name":"毒蝙蝠","hp":700,"atk":230,"def":160,"money":40,"exp":6,"point":0,"special":[1,5],"value":80,"atkValue":5},
 	"skeletonPriest": {"name":"混沌术士","hp":708,"atk":250,"def":1110,"money":92,"exp":10,"point":0,"special":[],"value":180},
 	"skeletonKing": {"name":"骷髅王","hp":600,"atk":260,"def":80,"money":32,"exp":8,"point":0,"special":0},
 	"evilHero": {"name":"迷失勇者","hp":400,"atk":200,"def":120,"money":24,"exp":6,"point":0,"special":0},
