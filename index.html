@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<!--
+	Striped by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="zh-tw">
+
+<head>
+	<title>2025冬季活動</title>
+	<meta name="google-site-verification" content="aMwt2RMKHUzulP9lSdXEtx2oH7EuzPh4qB-qFb3HMUU" />
+	<meta name="keywords" content="ascii art,AA同好會,AA,discord群組" />
+	<meta name="description" content="推廣與創作各種ASCII ART作品及安價/安科創作" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta property="og:title" content="AA同好會2025冬季活動" />
+	<meta property="og:description" content="AA同好會Discord分部" />
+	<meta property="og:url" content="https://aafanclubdc.github.io/" />
+	<meta property="og:image" content="https://aafanclubdc.github.io/main.png" />
+	<link rel="stylesheet" href="/assets/css/main.css" />
+	<link rel="stylesheet" href="/assets/css/buttom.css" />
+	<!-- <script src="assets/js/loadMetaData.js"></script> -->
+	<script src="/assets/js/GenerateButton.js"></script>
+	<!-- <script src="assets/js/loadtitleData.js"></script> -->
+	<script src="/assets/js/defaultPage.js"></script>
+	<script src="/assets/js/queryParamsRouter.js"></script>
+	<style>
+		article a img {
+			max-width: 800px;
+			height: auto;
+		}
+	</style>
+</head>
+
+<body class="is-preload">
+	<div id="content">
+		<article class="box post post-excerpt">
+			<header>
+				<h2>AA聖夜祭2025－②</h2>
+				<p>聖誕競猜</p>
+			</header>
+			<div class="info">
+				<span class="date"><span class="month">May<span>y</span></span> <span class="day">12</span><span
+						class="year">, 2025</span></span>
+				<ul class="stats">
+					<li><a class="icon fa-comment">16</a></li>
+					<li><a class="icon fa-heart">32</a></li>
+					<li><a class="icon brands fa-twitter">64</a></li>
+					<li><a class="icon brands fa-facebook-f">128</a></li>
+				</ul>
+			</div>
+			<p>
+				<strong>2025年冬季活動</strong><br>
+				【活動内容】
+				所有群員競猜每個短篇作品的創作者。
+
+			</p>
+		</article>
+	</div>
+	</div>
+	<!-- Sidebar -->
+	<div id="sidebar">
+
+		<!-- Logo -->
+		<h1 id="logo"><a>AA同好會</a></h1>
+
+		<!-- Nav -->
+		<nav id="nav">
+			<ul>
+				<li class="current"><a onClick="window.location.href='/'">首頁</a></li>
+			</ul>
+
+		</nav>
+
+		<!-- Text -->
+		<section class="box text-style1">
+			<div class="inner">
+				<p>
+					<strong>Striped:</strong> A free and fully responsive HTML5 site
+					template designed by <a href="http://twitter.com/ajlkn">AJ</a> for <a
+						href="http://html5up.net/">HTML5 UP</a>
+				</p>
+			</div>
+
+		</section>
+
+		<!-- Copyright -->
+		<ul id="copyright">
+			<li>&copy; Untitled.</li>
+			<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+		</ul>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="/assets/js/jquery.min.js"></script>
+	<script src="/assets/js/browser.min.js"></script>
+	<script src="/assets/js/breakpoints.min.js"></script>
+	<script src="/assets/js/util.js"></script>
+	<script src="/assets/js/main.js"></script>
+	<script>function generateGuild() {
+			var article = document.createElement('article');
+			article.id = "PartyB";
+			article.className = 'box post post-excerpt';
+			// 創建header並設置標題
+			const header = document.createElement('header');
+			const h2 = document.createElement('h2');
+			const aTitle = document.createElement('a');
+			aTitle.textContent = "組別一覽";
+			h2.appendChild(aTitle);
+			header.appendChild(h2);
+			article.appendChild(header);
+fetch('./data/res_sorted.json')
+    .then(response => response.json())
+    .then(data => {
+        // data: [[index, uid, htmlName?], ...]
+        // 依「出現順序」給 A組、B組、C組...
+        const info = data.map(([index, uid, htmlName], i) => {
+            const groupLetter = String.fromCharCode(65 + i); // 0=>A,1=>B,2=>C...
+            const title = groupLetter + "組";
+            const url = htmlName ? htmlName : `Group${groupLetter}.html`;
+            const imgNumber = String(index).padStart(2, '0'); // 1 -> "01"
+
+            return {
+                src: `images/players/${imgNumber}.png`,
+                title: title,
+                url: url
+            };
+        });
+
+                function getRandomData(data) {
+                    let randomIndex = Math.floor(Math.random() * data.length);
+                    return data[randomIndex];
+                }
+
+                // 建立 article（如果你原本有在別的地方建立，就用原本的）
+                const article = document.createElement('article');
+
+                // 隨機推薦一個
+                let player = getRandomData(info);
+                const randomButton = generateButton("images/main.png", "隨機推薦: ", player.url);
+                article.appendChild(randomButton);
+
+                // 依照 info 產生全部按鈕
+                info.forEach(player => {
+                    const button = generateButton(player.src, player.title, player.url);
+                    article.appendChild(button);
+                });
+
+                document.getElementById('content').appendChild(article);
+            })
+            .catch(err => {
+                console.error('載入 res_sorted.json 失敗：', err);
+            });
+
+		}</script>
+	<script>generateGuild();</script>
+	<!-- <script>loadTitleInfo();</script> -->
+</body>
+
+</html>
