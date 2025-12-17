@@ -115,9 +115,8 @@ fetch('./data/res_sorted.json')
     .then(data => {
         // data: [[index, uid, htmlName?], ...]
         const info = data.map(([index, uid, htmlName], i) => {
-            const title = htmlName ? htmlName.replace(/\.html$/i, "") : null;
+            let title = htmlName ? htmlName.replace(/\.html$/i, "") : null;
             const url = htmlName ? htmlName : `404.html`;
-
             return {
                 src: `images/players/${index}.png`,
                 title: title,
