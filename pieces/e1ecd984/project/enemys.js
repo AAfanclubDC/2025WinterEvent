@@ -81,5 +81,5 @@ var enemys_fcae963b_31c9_42b4_b48c_bb48d09f3f80 =
 	"bearLeft": {"name":"熊出没","hp":300,"atk":180,"def":120,"money":20,"exp":5,"point":0,"special":[],"faceIds":{"down":"bearDown","left":"bearLeft","right":"bearRight","up":"bearUp"}},
 	"bearRight": {"name":"熊出没","hp":300,"atk":180,"def":120,"money":20,"exp":5,"point":0,"special":[],"faceIds":{"down":"bearDown","left":"bearLeft","right":"bearRight","up":"bearUp"}},
 	"bearUp": {"name":"熊出没","hp":300,"atk":180,"def":120,"money":20,"exp":5,"point":0,"special":[],"faceIds":{"down":"bearDown","left":"bearLeft","right":"bearRight","up":"bearUp"}},
-	"E354": {"name":"新敌人","hp":0,"atk":0,"def":0,"money":0,"exp":0,"point":0,"special":[],"bigImage":"Mabel96X96.png"}
+	"E354": {"name":"梅貝爾","hp":0,"atk":0,"def":0,"money":0,"exp":0,"point":0,"special":[],"bigImage":"Mabel96X96.png"}
 }
