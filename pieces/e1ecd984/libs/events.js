@@ -2834,10 +2834,11 @@ events.prototype.openToolbox = function (fromUserAction) {
 ////// 点击快捷商店按钮时的打开操作 //////
 events.prototype.openQuickShop = function (fromUserAction) {
     if (core.isReplaying()) return;
-
+    core.playSound('操作失败');
+    core.drawTip("本游戏没有快捷商店！");
+    return;
+    
     if (Object.keys(core.status.shops).length == 0) {
-        core.playSound('操作失败');
-        core.drawTip("本游戏没有快捷商店！");
         return;
     }
 
