@@ -192,9 +192,33 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 		},
 		"levelChoose": [
 			{
-				"title": "難度:弱智",
+				"title": "難度:超弱智",
+				"name": "Easy",
+				"hard": 1,
+				"color": [
+					255,
+					221,
+					32,
+					1
+				],
+				"action": []
+			},
+			{
+				"title": "難度:更弱智",
 				"name": "Normal",
 				"hard": 2,
+				"color": [
+					255,
+					221,
+					32,
+					1
+				],
+				"action": []
+			},
+			{
+				"title": "難度:弱智",
+				"name": "Hard",
+				"hard": 3,
 				"color": [
 					255,
 					221,
@@ -250,7 +274,7 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 	"firstData": {
 		"title": "最後的勇者之塔",
 		"name": "idiot",
-		"version": "Ver 1.0.1",
+		"version": "Ver 1.1.0",
 		"floorId": "story_1",
 		"hero": {
 			"image": "hero.png",
@@ -642,38 +666,24 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 		"shops": [
 			{
 				"id": "shop1",
-				"text": "\t[店長,triangle]均一價${Math.min(20+3*flag:shop1,80)}金幣",
+				"text": "\t[店長,triangle]均一價${Math.min(20+flag:hard*flag:shop1,80)}金幣",
 				"textInList": "炭烤蜜瓜兔子",
 				"mustEnable": false,
 				"disablePreview": false,
 				"choices": [
 					{
 						"text": "生命+800",
-						"need": "status:money>=20+3*flag:shop1 || status:money>=80",
+						"need": "status:money>=20+flag:hard*flag:shop1 || status:money>=80",
 						"action": [
 							{
 								"type": "comment",
 								"text": "新版商店中需要手动扣减金币和增加访问次数"
 							},
 							{
-								"type": "if",
-								"condition": "(20+3*flag:shop1>80)",
-								"true": [
-									{
-										"type": "setValue",
-										"name": "status:money",
-										"operator": "-=",
-										"value": "80"
-									}
-								],
-								"false": [
-									{
-										"type": "setValue",
-										"name": "status:money",
-										"operator": "-=",
-										"value": "20+3*flag:shop1"
-									}
-								]
+								"type": "setValue",
+								"name": "status:money",
+								"operator": "-=",
+								"value": "20+flag:hard*flag:shop1"
 							},
 							{
 								"type": "setValue",
@@ -682,10 +692,16 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 								"value": "800"
 							},
 							{
-								"type": "setValue",
-								"name": "flag:shop1",
-								"operator": "+=",
-								"value": "1"
+								"type": "if",
+								"condition": "(flag:shop1<20)",
+								"true": [
+									{
+										"type": "setValue",
+										"name": "flag:shop1",
+										"operator": "+=",
+										"value": "1"
+									}
+								]
 							}
 						]
 					},
@@ -698,24 +714,10 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 								"text": "新版商店中需要手动扣减金币和增加访问次数"
 							},
 							{
-								"type": "if",
-								"condition": "(20+3*flag:shop1>80)",
-								"true": [
-									{
-										"type": "setValue",
-										"name": "status:money",
-										"operator": "-=",
-										"value": "80"
-									}
-								],
-								"false": [
-									{
-										"type": "setValue",
-										"name": "status:money",
-										"operator": "-=",
-										"value": "20+3*flag:shop1"
-									}
-								]
+								"type": "setValue",
+								"name": "status:money",
+								"operator": "-=",
+								"value": "20+flag:hard*flag:shop1"
 							},
 							{
 								"type": "setValue",
@@ -724,40 +726,32 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 								"value": "4"
 							},
 							{
-								"type": "setValue",
-								"name": "flag:shop1",
-								"operator": "+=",
-								"value": "1"
+								"type": "if",
+								"condition": "(flag:shop1<20)",
+								"true": [
+									{
+										"type": "setValue",
+										"name": "flag:shop1",
+										"operator": "+=",
+										"value": "1"
+									}
+								]
 							}
 						]
 					},
 					{
 						"text": "防禦+4",
-						"need": "status:money>=20+3*flag:shop1 || status:money>=80",
+						"need": "status:money>=20+flag:hard*flag:shop1 || status:money>=80",
 						"action": [
 							{
 								"type": "comment",
 								"text": "新版商店中需要手动扣减金币和增加访问次数"
 							},
 							{
-								"type": "if",
-								"condition": "(20+3*flag:shop1>80)",
-								"true": [
-									{
-										"type": "setValue",
-										"name": "status:money",
-										"operator": "-=",
-										"value": "80"
-									}
-								],
-								"false": [
-									{
-										"type": "setValue",
-										"name": "status:money",
-										"operator": "-=",
-										"value": "20+3*flag:shop1"
-									}
-								]
+								"type": "setValue",
+								"name": "status:money",
+								"operator": "-=",
+								"value": "20+flag:hard*flag:shop1"
 							},
 							{
 								"type": "setValue",
@@ -766,10 +760,16 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 								"value": "4"
 							},
 							{
-								"type": "setValue",
-								"name": "flag:shop1",
-								"operator": "+=",
-								"value": "1"
+								"type": "if",
+								"condition": "(flag:shop1<20)",
+								"true": [
+									{
+										"type": "setValue",
+										"name": "flag:shop1",
+										"operator": "+=",
+										"value": "1"
+									}
+								]
 							}
 						]
 					}
