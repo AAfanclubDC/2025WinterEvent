@@ -29,6 +29,21 @@ main.floors.MT15=
                     ]
                 }
             ]
+        },
+        {
+            "type": "if",
+            "condition": "(!core.hasItem('superPotion') )",
+            "true": [
+                {
+                    "type": "hide",
+                    "loc": [
+                        [
+                            5,
+                            7
+                        ]
+                    ]
+                }
+            ]
         }
     ],
     "parallelDo": "",
