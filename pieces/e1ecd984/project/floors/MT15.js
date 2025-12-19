@@ -64,6 +64,15 @@ main.floors.MT15=
             "data": [
                 {
                     "type": "if",
+                    "condition": "(!item:superPotion)",
+                    "true": [
+                        {
+                            "type": "exit"
+                        }
+                    ]
+                },
+                {
+                    "type": "if",
                     "condition": "(!flag:Getter3First)",
                     "true": [
                         {
