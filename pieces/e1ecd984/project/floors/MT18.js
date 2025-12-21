@@ -177,7 +177,27 @@ main.floors.MT18=
             },
             "\t[弱智,default]那隻怪物......",
             "\t[弱智,default]不對，不可能的汪",
-            "\t[弱智,default]先去看看塔頂到底發生了什麼，再去確定吧汪"
+            "\t[弱智,default]先去看看塔頂到底發生了什麼，再去確定吧汪",
+            {
+                "type": "hide",
+                "loc": [
+                    [
+                        8,
+                        4
+                    ]
+                ],
+                "remove": true
+            },
+            {
+                "type": "hide",
+                "loc": [
+                    [
+                        9,
+                        4
+                    ]
+                ],
+                "remove": true
+            }
         ],
         "6,2": [
             {
