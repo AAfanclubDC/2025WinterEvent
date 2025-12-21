@@ -44,6 +44,7 @@ main.floors.MT1=
             }
         ],
         "5,9": [
+            "\t[弱智,default]看上去挺普通的牆",
             {
                 "type": "if",
                 "condition": "(flag:TrueEnd===2)",
